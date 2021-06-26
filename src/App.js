@@ -14,7 +14,15 @@ const musicLib = {
   ],
   dance: [
     { name: "Goosebumps", singer: "Travis Scott" },
-    { name: "Franchise", singer: "Travis Scott" }
+    { name: "Franchise", singer: "Travis Scott" },
+    { name: "The Scotts", singer: "Travis Scott" },
+    { name: "Sicko Mode", singer: "Travis Scott" }
+  ],
+  punjabi: [
+    { name: "Brown Munde", singer: "AP Dhillion" },
+    { name: "Born to Shine", singer: "Diljit Dosanjh" },
+    { name: "Same Beef", singer: "Sidhu Moosewala" },
+    { name: "So High", singer: "Sidhu Moosewala" }
   ]
 };
 
