@@ -39,6 +39,13 @@ li {
   border-radius: 0.5rem;
 }
 
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
 .div-name {
   font-size: 1.5rem;
 }

@@ -4,25 +4,85 @@ import { useState } from "react";
 
 const musicLib = {
   pop: [
-    { name: "7 Rings", singer: "Ariana Grande" },
-    { name: "Him and I", singer: "Halsey" }
+    {
+      name: "7 Rings",
+      singer: "Ariana Grande",
+      img:
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+    },
+    {
+      name: "Him and I",
+      singer: "Halsey",
+      img:
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+    }
   ],
 
   bollywood: [
-    { name: "Mirchi", singer: "Divine" },
-    { name: "Dope Shop", singer: "Honey Singh" }
+    {
+      name: "Mirchi",
+      singer: "Divine",
+      img:
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+    },
+    {
+      name: "Dope Shop",
+      singer: "Honey Singh",
+      img:
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+    }
   ],
   dance: [
-    { name: "Goosebumps", singer: "Travis Scott" },
-    { name: "Franchise", singer: "Travis Scott" },
-    { name: "The Scotts", singer: "Travis Scott" },
-    { name: "Sicko Mode", singer: "Travis Scott" }
+    {
+      name: "Goosebumps",
+      singer: "Travis Scott",
+      img:
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+    },
+    {
+      name: "Franchise",
+      singer: "Travis Scott",
+      img:
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+    },
+    {
+      name: "The Scotts",
+      singer: "Travis Scott",
+      img:
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+    },
+    {
+      name: "Sicko Mode",
+      singer: "Travis Scott",
+      img:
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+    }
   ],
   punjabi: [
-    { name: "Brown Munde", singer: "AP Dhillion" },
-    { name: "Born to Shine", singer: "Diljit Dosanjh" },
-    { name: "Same Beef", singer: "Sidhu Moosewala" },
-    { name: "So High", singer: "Sidhu Moosewala" }
+    {
+      name: "Brown Munde",
+      singer: "AP Dhillion",
+      img:
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+    },
+    {
+      name: "Born to Shine",
+      singer: "Diljit Dosanjh",
+      img:
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+    },
+    {
+      name: "Same Beef",
+      singer: "Sidhu Moosewala",
+      img:
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+    },
+    {
+      name: "So High",
+      singer: "Sidhu Moosewala",
+      img:
+        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+    }
   ]
 };
 
@@ -50,6 +110,9 @@ export default function App() {
         <ul>
           {musicLib[selectedGenre].map((genre) => (
             <li key={genre.name}>
+              <div className="div-img">
+                <img src={genre.img} alt="img" />{" "}
+              </div>
               <div className="div-name"> {genre.name} </div>
               <div className="div-singer"> {genre.singer} </div>
             </li>
