@@ -7,13 +7,14 @@
 }
 
 body {
-  background-color: #d1fae5;
+  background-color: #00adb5;
   font-family: "Roboto", sans-serif;
 }
 
 button {
   cursor: pointer;
-  background: #fbbf24;
+  background-color: #222831;
+  color: white;
   border-radius: 0.5rem;
   font-size: 1rem;
   padding: 1rem;
@@ -23,7 +24,7 @@ button {
 
 button:hover {
   font-size: 1.1rem;
-  background: #fde68a;
+  background: #393e46;
 }
 
 ul {
@@ -31,13 +32,21 @@ ul {
 }
 
 li {
+  display: flex;
   list-style: none;
   padding: 1rem;
   border: 1px solid black;
   width: 70%;
   margin: 1rem 0rem;
   border-radius: 0.5rem;
-  background-color: #ddd6fe;
+  background-color: #eeeeee;
+}
+
+.div-flex {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 img {
@@ -51,11 +60,9 @@ img {
 }
 
 .div-name {
-  text-align: center;
   font-size: 1.5rem;
 }
 
 .div-singer {
-  text-align: center;
   font-size: 0.9rem;
 }

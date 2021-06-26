@@ -72,7 +72,7 @@ const musicLib = {
         "https://upload.wikimedia.org/wikipedia/en/thumb/c/c8/Luis_Fonsi_Feat._Daddy_Yankee_-_Despacito_%28Official_Single_Cover%29.png/220px-Luis_Fonsi_Feat._Daddy_Yankee_-_Despacito_%28Official_Single_Cover%29.png"
     },
     {
-      name: "Something just like this",
+      name: "Something just",
       singer: "The Chainsmokers",
       img:
         "https://upload.wikimedia.org/wikipedia/en/thumb/5/57/Something_Just_Like_This.png/220px-Something_Just_Like_This.png"
@@ -113,8 +113,10 @@ export default function App() {
               <div className="div-img">
                 <img src={genre.img} alt="img" />{" "}
               </div>
-              <div className="div-name"> {genre.name} </div>
-              <div className="div-singer"> {genre.singer} </div>
+              <div className="div-flex">
+                <div className="div-name"> {genre.name} </div>
+                <div className="div-singer"> {genre.singer} </div>
+              </div>
             </li>
           ))}
         </ul>
