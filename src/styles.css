@@ -37,19 +37,25 @@ li {
   width: 70%;
   margin: 1rem 0rem;
   border-radius: 0.5rem;
+  background-color: #ddd6fe;
 }
 
 img {
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
-  width: 150px;
+  width: 100px;
+}
+.div-img {
+  text-align: center;
 }
 
 .div-name {
+  text-align: center;
   font-size: 1.5rem;
 }
 
 .div-singer {
+  text-align: center;
   font-size: 0.9rem;
 }
