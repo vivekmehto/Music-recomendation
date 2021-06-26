@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 .App {
   max-width: 600px;
   margin: auto;
@@ -6,6 +8,7 @@
 
 body {
   background-color: #d1fae5;
+  font-family: "Roboto", sans-serif;
 }
 
 button {
